@@ -13,16 +13,28 @@
 
 ## Установка
 
-<!-- Опишите установку: клонирование, зависимости, переменные окружения -->
-
 ```bash
 git clone https://github.com/Artemgh001/backend-project-44.git
 cd backend-project-44
+make install
 ```
 
 ## Использование
 
-<!-- Добавьте примеры запуска и запись asciinema — именно это смотрит работодатель -->
+1. brain-even - запуск игры "четное/нечетное"
+   Игра - четное/нечетное и ее запуск: https://asciinema.org/a/DLIVQ8PtG5hMwbHa
+
+2. brain-calc - запуск игры "калькулятор"
+   Игра - калькулятор и ее запуск: https://asciinema.org/a/NanKt551Ky5uJ9v0
+
+3. brain-gcd - запуск игры "нахождение НОД"
+   Игра - нахождение НОД и её запуск: https://asciinema.org/a/e7gYqqtgt5Ksyplw
+
+4. brain-prime - запуск игры "простое число или нет"
+   Игра - простое число или нет: https://asciinema.org/a/YZNGCScQjuHHQfHX
+
+5. brain-progression - запуск игры "нахождение пропущенного числа в арифметической прогрессии"
+   Игра - нахождение пропущенного числа в арифметической прогрессии: https://asciinema.org/a/R3MmL1HF8DZcHl9E
 
 ---
 
