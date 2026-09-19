@@ -2,10 +2,10 @@ import _ from "lodash";
 
 export function havePrimeNumber() {
   const primeNumber = _.random(1, 100);
-  let correctAnswer = "";
   if (primeNumber === 1) {
-    correctAnswer += "no";
+    return { question: primeNumber, correctAnswer: "no" };
   }
+  let correctAnswer = "";
   let counter = primeNumber / 2 - 1;
   let bol = true;
   while (counter > 1) {
@@ -16,9 +16,9 @@ export function havePrimeNumber() {
     counter -= 1;
   }
   if (bol === true) {
-    correctAnswer += "yes";
+    correctAnswer = "yes";
   } else {
-    correctAnswer += "no";
+    correctAnswer = "no";
   }
   return { question: primeNumber, correctAnswer };
 }
