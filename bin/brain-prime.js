@@ -5,6 +5,6 @@ import { fc } from "../src/index.js";
 console.log(
   fc(
     havePrimeNumber,
-    `Answer "yes" if number is prime. Otherwise answer "no".`,
+    `Answer "yes" if given number is prime. Otherwise answer "no".`,
   ),
 );
