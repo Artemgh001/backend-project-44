@@ -1,6 +1,6 @@
 import _ from "lodash";
 
-function haveProgress() {
+function getProgress() {
   const start = _.random(0, 35);
   let counter = 1;
   let strProgress = `${start}`;
@@ -15,10 +15,10 @@ function haveProgress() {
   return strProgress;
 }
 
-export function haveNullEl() {
-  let mas = haveProgress().split(" ");
-  const randElement = _.random(0, 10);
-  const correctAnswer = mas[randElement];
-  mas[randElement] = "..";
-  return { question: mas.join(" "), correctAnswer };
+export function getNullEl() {
+  let elements = getProgress().split(" ");
+  const randElement = _.random(0, 9);
+  const correctAnswer = elements[randElement];
+  elements[randElement] = "..";
+  return { question: elements.join(" "), correctAnswer };
 }

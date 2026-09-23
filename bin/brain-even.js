@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-import { fc } from "../src/index.js";
-import { haveEven } from "../src/games/brain-even.js";
-console.log(
-  fc(haveEven, `Answer "yes" if the number is even, otherwise answer "no".`),
-);
+import { run } from "../src/index.js";
+import { getEven } from "../src/games/brain-even.js";
+
+run(getEven, `Answer "yes" if the number is even, otherwise answer "no".`);

@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import { haveName } from "../src/cli.js";
-const greet = haveName();
+import { getName } from "../src/cli.js";
 console.log("Welcome to the Brain Games!");
-console.log(greet.gretting);
+const greet = getName();
+console.log(greet.greeting);

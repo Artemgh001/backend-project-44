@@ -1,5 +1,5 @@
 import readlineSync from "readline-sync";
-export function haveName() {
+export function getName() {
   const name = readlineSync.question("May I have your name? ");
-  return { name, gretting: `Hello, ${name}!` };
+  return { name, greeting: `Hello, ${name}!` };
 }

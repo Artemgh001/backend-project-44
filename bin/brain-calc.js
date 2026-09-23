@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { fc } from "../src/index.js";
-import { haveCorrectAnswerCalc } from "../src/games/brain-calc.js";
+import { run } from "../src/index.js";
+import { getCorrectAnswerCalc } from "../src/games/brain-calc.js";
 
-console.log(fc(haveCorrectAnswerCalc, `What is the result of the expression?`));
+run(getCorrectAnswerCalc, `What is the result of the expression?`);

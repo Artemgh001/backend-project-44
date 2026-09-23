@@ -1,18 +1,16 @@
 import _ from "lodash";
 
-export function nod() {
-  const firstNumber = _.random(0, 100);
-  const secondNumber = _.random(0, 100);
+export function getGcd() {
+  let firstNumber = _.random(1, 100);
+  let secondNumber = _.random(1, 100);
   const question = `${firstNumber} ${secondNumber} `;
-  const minNumber = _.min([firstNumber, secondNumber]);
-  let counter = 1;
-  if (firstNumber === 0 || secondNumber === 0) {
-    return { correctAnswer: _.max([firstNumber, secondNumber]), question };
-  }
-  for (let i = 1; i <= minNumber; i += 1) {
-    if (firstNumber % i === 0 && secondNumber % i === 0) {
-      counter = i;
+  while (firstNumber !== 0 && secondNumber !== 0) {
+    if (firstNumber > secondNumber) {
+      firstNumber = firstNumber % secondNumber;
+    } else {
+      secondNumber = secondNumber % firstNumber;
     }
   }
-  return { correctAnswer: counter, question };
+
+  return { correctAnswer: firstNumber + secondNumber, question };
 }
